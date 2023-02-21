@@ -5,8 +5,9 @@ import torch
 import torch.nn.functional as F
 import torch.nn as nn
 
-from ..common.settings import POLICY_NOISE, POLICY_NOISE_CLIP, POLICY_UPDATE_FREQUENCY
-from ..common.ounoise import OUNoise
+from .settings import POLICY_NOISE, POLICY_NOISE_CLIP, POLICY_UPDATE_FREQUENCY
+
+from .ounoise import OUNoise
 
 from .off_policy_agent import OffPolicyAgent, Network
 
